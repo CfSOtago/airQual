@@ -20,23 +20,18 @@ Analysis snapshots:
  * [Snapshot 30/4/2020](sccAirQualExplore_covidLockdown2020_DEFRA_30_04_2020.html) of the above analysis, some of which was used in:
     * Anderson, Ben and Dirks, Kim (2020) [A preliminary analysis of changes in outdoor air quality in the City of Southampton during the 2020 COVID-19 outbreak to date: a response to DEFRA’s Call for Evidence1 on Estimation of changes in air pollution emissions, concentrations and exposure during the COVID-19 outbreak in the UK](https://eprints.soton.ac.uk/439813/). Southampton. Universty of Southampton  This was a response to a [DEFRA call for evidence](https://uk-air.defra.gov.uk/news?view=259).
 
-#### General explorations
+#### General Analysis (pre 2020)
 
-See https://www.southampton.gov.uk/environmental-issues/pollution/air-quality/
-
-Southampton homes tend to rely on reticulated (mains) gas, electricity and in [some areas](https://datashine.org.uk/#table=QS415EW&col=QS415EW0007&ramp=YlOrRd&layers=BTTT&zoom=12&lon=-1.4252&lat=50.9258), district heating. However gas boilers, woodburners and (relatively rare) coal fires are known sources of pollutants so heating systems may also be a contributor to poor air quality in Southampton alongside fossil-fuel based transport.
+Southampton homes tend to rely on reticulated (mains) gas, electricity and in [some areas](https://datashine.org.uk/#table=QS415EW&col=QS415EW0007&ramp=YlOrRd&layers=BTTT&zoom=12&lon=-1.4252&lat=50.9258), district heating. However gas boilers, woodburners and (relatively rare) coal fires are known sources of pollutants so heating systems may also be a contributor to [poor air quality in Southampton](https://www.southampton.gov.uk/environmental-issues/pollution/air-quality/) alongside fossil-fuel based transport.
 
 Data sources: 
  
  * Directly: from [http://southampton.my-air.uk/](http://southampton.my-air.uk/) although this site is now mostly inactive. Plots and data also available from http://www.hantsair.org.uk/hampshire/asp/home.asp?la=Southampton;
  * Indirectly: Two of the Southampton sites also feed to http://uk-air.defra.gov.uk/openair/R_data/ and the data can be downloaded using `ōpenair::importAURN()`. We explain which source we use when and why in the analysis.
  
- 
 NB: The AURN data undergoes a processes of  [ratification](https://uk-air.defra.gov.uk/assets/documents/Data_Validation_and_Ratification_Process_Apr_2017.pdf) with a lag of about 6 months. Data less than 6 months old will not have undergone this process.
 
 AURN data is (c) Crown 2020 copyright Defra via https://uk-air.defra.gov.uk, licenced under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/) (OGL).
-
- Analysis:
  
  * [Initial exploratory analysis](sccAirQualExplore_Exploring the data.html) - simple & interactive plots, can be slow to load; just uses southampton.my-air.uk
  * [Further exploratory analysis](sccAirQualExploreAURN.html) - uses the excellent [openair](http://davidcarslaw.github.io/openair/) R package
